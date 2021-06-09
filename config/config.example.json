@@ -1,0 +1,10 @@
+{
+    "development": {
+      "username": "database_username",
+      "password": "database_password",
+      "database": "database_name",
+      "host": "host name (if local, it's 'localhost')",
+      "dialect": "mysql"
+    }
+  }
+  
