@@ -4,7 +4,7 @@
 
 Esse projeto é uma API para o sistema de voto de propostas criadas pelos alunos,  
 para a escola ETEC da Zona Leste. Desenvolvido em ambiente Node.js, com express.js e  
-Sequelize usando MySQL como dialeto do banco de dados
+Sequelize usando PostgreSQL como dialeto do banco de dados
 
 ## Instalação
 
