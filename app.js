@@ -4,6 +4,9 @@ const app = express();
 
 const mysql = require("mysql2");
 
+app.get('/', (req, res) => {
+	res.send("Bem-vindo!");
+})
 app.use("/propostas", require("./routes/propostas"));
 app.use("/voto", require("./routes/voto"));
 
