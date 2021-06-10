@@ -6,7 +6,10 @@ router.get('/listar', (req, res) => {
     const limit = 5;
     const offset = page ? page * limit : 0;    
 
-    Propostas.findAndCountAll({limit, offset})
+    Propostas.findAndCountAll({
+        
+        order: [['score', 'DESC']], limit, offset
+    })
     .then(result => {
             const totalPages = Math.ceil(result.count / limit)
             res.send({rows: result.rows, totalPages});
